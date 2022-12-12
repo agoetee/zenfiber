@@ -1,9 +1,133 @@
+body::before {
+	display: block;
+	content: '';
+	height: 60px;
+}
+
 .navbar-expand-lg {
 	background: #007575;
 }
 
 .workCard-text {
 	background: #007575;
+}
+
+.the-icons {
+	font-size: 0.73em;
+}
+
+/*POP UP- SHOWCASE SECTION*/
+
+.button {
+	font-size: 1.5em;
+	padding: 10px;
+	color: #fff;
+	border-radius: 10px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	background: #24a0ed;
+}
+
+.button:hover {
+	background: #107dc2;
+	color: #fff;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #ffff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+.popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+.popup .close:hover {
+	color: #06D85F;
+}
+.popup .content {
+	max-height: 30%;
+	overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+	.box{
+		width: 70%;
+	}
+	.popup{
+		width: 70%;
+	}
+}
+
+/*Popup is up*/
+
+
+.bodies {
+	background: #007575;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 40em;
+}
+
+.container { 
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.the-head {
+	flex: 1;
+	height: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.the-head h1 {
+	font-size: 3em;
+}
+
+.counter {
+	background: #fff;
+	color: #007575;
+	padding: 40px 20px; 
+}
+
+.main-writing {
+	font-size: 6rem;
 }
 
 #lists {
