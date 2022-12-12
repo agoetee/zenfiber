@@ -1,0 +1,25 @@
+.navbar-expand-lg {
+	background: #007575;
+}
+
+.workCard-text {
+	background: #007575;
+}
+
+#lists {
+	color: white;
+}
+
+.mytext-bg {
+	background: black;
+	opacity: 0.5;
+}
+
+.grid-image {
+	height: 65vh;
+	object-fit: contain;
+}
+.cat-image {
+	height: 58vh;
+	object-fit: contain;
+}
