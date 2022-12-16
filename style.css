@@ -147,3 +147,13 @@ body::before {
 	height: 58vh;
 	object-fit: contain;
 }
+/*FOOTER SECTION*/
+.footer {
+	background-color: #007575;
+	color: white;
+	padding: 5px 0;
+	text-align: center;
+	font-size: 10px;
+}
+
+/*FOOTER SECTION*/
