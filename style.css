@@ -149,34 +149,27 @@ body::before {
 }
 
 
+/* IMAGE-SLIDER */
 
+.carousel {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+    
+}
 
+.image-container {
+    display: flex;
+    transition: transform 0.3s linear;
+    transform: translateX(0);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+img {
+    object-fit: fill;
+    height: 500px; 
+    width: 500px;
+}
 
 /*ABOUT-US SECTION AND POP-UP*/
 .hide {
@@ -296,3 +289,4 @@ body::before {
 }
 
 /*FOOTER SECTION*/
+
