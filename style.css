@@ -212,10 +212,10 @@ img {
 	-o-transition: all 100ms ease-in;
 }
 .close:after {
-	transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
+	transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
 }
 .popup {
 	position: absolute;
@@ -277,7 +277,28 @@ img {
 	outline: none;
 	box-shadow: 1px 2px 3px #F5F5F5;
 }
-/*ABOUT-US SECTION AND POP-UP*/
+
+/*ABOUT-US SECTION */
+
+/*ABOUT-US SECTION */
+
+/*CONTACT US SECTION*/
+
+.table-text {
+	font-size: 1.5em;
+	color: black;
+}
+
+.table-text a {
+	text-decoration: none;
+}
+/*Message Subsection*/
+.required:after {
+	content: " *";
+	color: red;
+
+}
+/*CONTACT US SECTION*/
 
 /*FOOTER SECTION*/
 .footer {
