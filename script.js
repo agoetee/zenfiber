@@ -34,3 +34,16 @@ function run() {
 }
 
 setInterval(run, 2000);
+
+
+// FOOTER GO-BACK-UP BUTTON
+
+// $(document).ready(function (){
+//   $("#click").click(function (){
+//     $('html, body').animate({
+//       scrollTop: $("#Home").offset().top
+//     }, 2000);
+//   });
+// });
+
+// FOOTER GO-BACK-UP BUTTON
