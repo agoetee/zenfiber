@@ -318,7 +318,7 @@ footer {
 }
 .footer-button {
 	position: absolute;
-	top: 0;
+	top: 1.2em;
 	right: 0;
 }
 
@@ -328,7 +328,11 @@ button {
 	border-radius: 5px;
 	overflow: auto;
 	display: flex;
-	f
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
 }
 /*FOOTER SECTION*/
 
