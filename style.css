@@ -4,6 +4,14 @@ body::before {
 	height: 60px;
 }
 
+/* NAVBAR*/
+.navbar-brand > img {
+	max-height: 1.8em;
+	height: 70%;
+	width: 18em;
+	margin: 0 auto;
+}
+/* NAVBAR */
 .navbar-expand-lg {
 	background: #007575;
 }
