@@ -4,6 +4,14 @@ body::before {
 	height: 60px;
 }
 
+/* NAVBAR*/
+.navbar-brand > img {
+	max-height: 1.8em;
+	height: 70%;
+	width: 18em;
+	margin: 0 auto;
+}
+/* NAVBAR */
 .navbar-expand-lg {
 	background: #007575;
 }
@@ -212,10 +220,10 @@ img {
 	-o-transition: all 100ms ease-in;
 }
 .close:after {
-	transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
+	transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
 }
 .popup {
 	position: absolute;
@@ -277,16 +285,62 @@ img {
 	outline: none;
 	box-shadow: 1px 2px 3px #F5F5F5;
 }
-/*ABOUT-US SECTION AND POP-UP*/
+
+/*ABOUT-US SECTION */
+
+/*ABOUT-US SECTION */
+
+/*CONTACT US SECTION*/
+
+.table-text {
+	font-size: 1.5em;
+	color: black;
+}
+
+.table-text a {
+	text-decoration: none;
+}
+/*Message Subsection*/
+.required:after {
+	content: " *";
+	color: red;
+
+}
+/*CONTACT US SECTION*/
 
 /*FOOTER SECTION*/
-.footer {
-	background-color: #007575;
+footer {
 	color: white;
 	padding: 5px 0;
 	text-align: center;
 	font-size: 10px;
 }
 
+.footer-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: row;
+	padding: 1.5em 0;	
+}
+.footer-button {
+	position: absolute;
+	top: 1.2em;
+	right: 0;
+}
+
+button {
+	font-size: 2em;
+	border: none;
+	border-radius: 5px;
+	overflow: auto;
+	display: flex;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+}
 /*FOOTER SECTION*/
 
