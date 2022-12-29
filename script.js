@@ -1,19 +1,3 @@
-const counters = document.querySelectorAll('.counter');
-const speed = 200;
-
-counters.forEach(counter => {
-	const updateCount = () => {
-		const target = +counter.getAttrubute('data-target');
-		const count = +counter.innerText;
-
-		const inc = target / speed;
-
-		console.log(inc);
-	}
-
-	updateCount();
-});
-
 
 // IMAGE-SLIDER //
 const imgs = document.getElementById('imgs');
@@ -35,15 +19,28 @@ function run() {
 
 setInterval(run, 2000);
 
+// IMAGE-SLIDER //
 
-// FOOTER GO-BACK-UP BUTTON
 
-// $(document).ready(function (){
-//   $("#click").click(function (){
-//     $('html, body').animate({
-//       scrollTop: $("#Home").offset().top
-//     }, 2000);
-//   });
-// });
+// ANIMATED COUNTER 2
+document.addEventListener("DOMContentLoaded", () => {
+  function counter(id, start, end, duration) {
+    let obj = document.getElementById(id),
+    current = start,
+    range = end - start,
+    increment = end > start ? 1 : -1,
+    step = Math.abs(Math.floor(duration / range)),
+    timer = setInterval(() => {
+      current += increment;
+      obj.textContent = current;
+      if (current == end) {
+        clearInterval(timer);
+      }
+    }, step);
+  }
+  counter("count1", 0, 5500, 4000);
+  counter("count2", 0, 4, 2500);
+  counter("count3", 0, 20, 3000);
+});
 
-// FOOTER GO-BACK-UP BUTTON
+// ANIMATED COUNTER 2
