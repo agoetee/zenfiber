@@ -179,9 +179,24 @@ img {
     width: 500px;
 }
 
+/* READ-MORE LIST HEADING*/
+.list-heading {
+	font-weight: bold;
+}
+
+/* READ-MORE LIST HEADING*/
+
 /*ANIMATED COUNTER SECTION*/
 .work-numbers {
 	font-size: 1.5em;
+}
+
+.gallery {
+	font-size: 2em;
+}
+
+.icon {
+	font-size: 4em;
 }
 
 /*ANIMATED COUNTER SECTION*/
