@@ -77,7 +77,7 @@
 
 	
 	<!-- What We Do Section -->
-	<section class="bg-light pt-5 pb-5 shadow-sm" id="whatWeDo">
+	<section class="bg-light p-5 shadow-sm" id="whatWeDo">
 		<div class="container">
 			<div class="row pt-5">
 				<div class="col-12">
@@ -125,7 +125,7 @@
 
 
 	<!-- CHOOSE US SECTION -->
-	<section id="choose-us">
+	<section class="p-5 shadow-sm" id="choose-us" >
 		<div class="row pt-5">
 			<div class="col-12">
 				<h2 class="text-center border-bottom mb-5 pb-5">WHY CHOOSE US</h2>
@@ -317,7 +317,7 @@
 
 
 	<!-- CONTACT US SECTION -->
-	<section class="bg-light text-dark text-sm-start" id="contactUs">
+	<section class="bg-light text-dark text-sm-start p-5 shadow-sm" id="contactUs">
 		<div class="container">
 			<div class="row pt-5">
 				<div class="col-12">
@@ -356,30 +356,31 @@
 				</div>
 				<div class="col-md">
 					<h4 class="mb-4 text-center">Send message</h4>
-					<form>
+					<form action="mailto:agoetee@gmail.com" method="post" enctype="text/plain">
 						<div class="form-group row">							 
 							<div class="col-sm-10">
 								<label for="inputName" class="required col-sm-2 col-form-label">Name</label>
-								<input type="name" class="form-control" id="inputName" placeholder="Kofi Nti">
+								<input type="name" class="form-control" id="inputName" placeholder="Kofi Nti" required/>
 							</div>							
 						</div>
 						<div class="form-group row">							 
 							<div class="col-sm-10">
 								<label for="inputPhone" class="required col-sm-2 col-form-label">Phone</label>
-								<input type="name" class="form-control" id="inputPhone" placeholder="0240 102 1234">
+								<input type="tel" class="form-control" id="inputPhone" placeholder="0240 102 1234" minlength="10"  maxlength="13" required/>
 							</div>							
 						</div>
 						<div class="form-group row">							 
 							<div class="col-sm-10">
 								<label for="inputEmail" class="required col-sm-2 col-form-label">Email</label>
-								<input type="name" class="form-control" id="inputEmail" placeholder="name@example.com">
+								<input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" minlength="7" required/>
 							</div>							
 						</div>
 						<div class="form-group">
 							<label for="texting-area" class="required">Message</label>
-							<textarea class="form-control" id="texting-area" rows="3"></textarea>
-						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+							<textarea class="form-control" id="texting-area" rows="3" required></textarea>
+						</div><br>
+						<button type="submit" value="Send" class="btn btn-primary">Submit</button><br>
+						<input class="submit btn btn-primary" value="Submit" type="submit"/>
 					</form>
 				</div>
 			</div>		
