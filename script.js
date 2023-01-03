@@ -44,3 +44,20 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ANIMATED COUNTER 2
+
+// CONTACT FORM EMAIL VALIDATION
+
+function validateEmail() {
+  var emailID = document.contactForm.Email.value;
+  theAt = emailID.indexOf("@");
+  theDot = emailID.lastIndexOf(".");
+
+  if (theAt < 1 || (theDot - theAt < 2) ) {
+    alert("The email address is still not ok")
+    document.contactForm.Email.focus();
+    return false;
+  }
+  return true;
+}
+
+// CONTACT FORM EMAIL VALIDATION
