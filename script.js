@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }, step);
   }
-  counter("count1", 0, 5500, 4000);
+  counter("count1", 0, 505, 4000);
   counter("count2", 0, 4, 2500);
-  counter("count3", 0, 20, 3000);
+  counter("count3", 0, 18, 3000);
 });
 
 // ANIMATED COUNTER 2
