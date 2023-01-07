@@ -201,7 +201,25 @@ img {
 
 /*ANIMATED COUNTER SECTION*/
 
+/*ABOUT-US SECTION*/
+/*.drop-cap:first-letter {
+	font-family: monospace;
+	float: left;
+	font-size: 4rem;
+	line-height: 0.65;
+	margin: 0.1em 0.1em 0.1em 0;
+}
 
+.drop-cap p:first-child:first-letter {
+	float: left;
+	font-family: fantasy;
+	font-size: 4em;
+	line-height: 3.5em;
+	padding: 0.2em 0.2em 0.2em 0;
+
+}*/
+
+/*ABOUT-US SECTION*/
 
 
 /*CONTACT US SECTION*/
