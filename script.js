@@ -1,19 +1,3 @@
-const counters = document.querySelectorAll('.counter');
-const speed = 200;
-
-counters.forEach(counter => {
-	const updateCount = () => {
-		const target = +counter.getAttrubute('data-target');
-		const count = +counter.innerText;
-
-		const inc = target / speed;
-
-		console.log(inc);
-	}
-
-	updateCount();
-});
-
 
 // IMAGE-SLIDER //
 const imgs = document.getElementById('imgs');
@@ -33,17 +17,47 @@ function run() {
 	imgs.style.transform = `translateX(${-idx * 500}px)`;
 }
 
-setInterval(run, 2000);
+setInterval(run, 3000);
+
+// IMAGE-SLIDER //
 
 
-// FOOTER GO-BACK-UP BUTTON
+// ANIMATED COUNTER 2
+document.addEventListener("DOMContentLoaded", () => {
+  function counter(id, start, end, duration) {
+    let obj = document.getElementById(id),
+    current = start,
+    range = end - start,
+    increment = end > start ? 1 : -1,
+    step = Math.abs(Math.floor(duration / range)),
+    timer = setInterval(() => {
+      current += increment;
+      obj.textContent = current;
+      if (current == end) {
+        clearInterval(timer);
+      }
+    }, step);
+  }
+  counter("count1", 0, 505, 4000);
+  counter("count2", 0, 4, 2500);
+  counter("count3", 0, 18, 3000);
+});
 
-// $(document).ready(function (){
-//   $("#click").click(function (){
-//     $('html, body').animate({
-//       scrollTop: $("#Home").offset().top
-//     }, 2000);
-//   });
-// });
+// ANIMATED COUNTER 2
 
-// FOOTER GO-BACK-UP BUTTON
+// CONTACT FORM EMAIL VALIDATION
+
+function validateEmail() {
+  var emailID = document.contactForm.Email.value;
+  theAt = emailID.indexOf("@");
+  theDot = emailID.lastIndexOf(".");
+
+  if (theAt < 1 || (theDot - theAt < 2) ) {
+    alert("The email address is still not ok")
+    document.contactForm.Email.focus();
+    return false;
+  }
+  return true;
+}
+
+// CONTACT FORM EMAIL VALIDATION
