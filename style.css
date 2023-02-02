@@ -101,14 +101,6 @@ body::before {
 /*Popup is up*/
 
 
-.bodies {
-	background: #007575;
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	height: 40em;
-}
 
 .container { 
 	max-width: 1100px;
@@ -116,27 +108,7 @@ body::before {
 	overflow: auto;
 }
 
-.the-head {
-	flex: 1;
-	height: 60%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 
-.the-head h1 {
-	font-size: 3em;
-}
-
-.counter {
-	background: #fff;
-	color: #007575;
-	padding: 40px 20px; 
-}
-
-.main-writing {
-	font-size: 6rem;
-}
 
 #lists {
 	color: white;
@@ -145,15 +117,6 @@ body::before {
 .mytext-bg {
 	background: black;
 	opacity: 0.5;
-}
-
-.grid-image {
-	height: 65vh;
-	object-fit: contain;
-}
-.cat-image {
-	height: 58vh;
-	object-fit: contain;
 }
 
 
@@ -185,6 +148,34 @@ img {
 }
 
 /* READ-MORE LIST HEADING*/
+
+/* BOOTSTRAP PADDING REPLACEMENT SECTION */
+
+.main-section, .text-canvass{
+	padding: 3em 3em 0 3em;
+}
+.section-canvass {
+	padding: 3em;
+}
+@media (max-width: 35em) {
+	.main-section, .section-canvass {
+		padding: 0;
+	}
+	.text-canvass {
+		padding: 1em;
+	}
+	.technology {
+		padding-top: 2em;
+	}
+	.contacting {
+		font-size: .6em;
+		padding: 1.5em;
+	}
+
+}
+
+/* BOOTSTRAP PADDING REPLACEMENT SECTION */
+
 
 /*ANIMATED COUNTER SECTION*/
 .work-numbers {
@@ -232,6 +223,22 @@ img {
 .table-text a {
 	text-decoration: none;
 }
+.table1 {
+	padding-bottom: 0.5rem;
+}
+
+@media (max-width: 35em) {
+	.table1 {
+		padding-bottom: 0;
+	}
+}
+
+@media only screen and (max-width: 35em) {
+	.table2-head {
+		display: none;
+	}
+}
+
 /*Message Subsection*/
 .required:after {
 	content: " *";
