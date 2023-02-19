@@ -182,15 +182,46 @@ img {
 	font-size: 1.5em;
 }
 
-.gallery {
-	font-size: 2em;
-}
-
-.icon {
-	font-size: 4em;
-}
-
 /*ANIMATED COUNTER SECTION*/
+
+/* FIXED GALLERY ICON */
+
+.galleryRight {
+	position: fixed;
+	right: 0;
+	bottom: 40%;
+	border: 3px solid #2B9696;
+	background-color: #004646;
+	color: white;
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.theIcon {
+	font-size: 4em;
+	padding: 0 0.2em 0 0.2em;
+}
+.theIcon:hover {
+	color: #fff;
+}
+.galleryRightText {
+	font-size: 0.8em;
+}
+@media (max-width:35em) {
+	.galleryRight {
+		position: fixed;
+		top: 20%;
+		right: 0;
+	}
+	.theIcon {
+		font-size: 2em;
+	}
+
+}
+/* FIXED GALLERY ICON */
 
 /*ABOUT-US SECTION*/
 /*.drop-cap:first-letter {
