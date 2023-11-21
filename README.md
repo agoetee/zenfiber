@@ -25,3 +25,6 @@ DOCUMENTATION
 __fly.toml file__
 
 Configurations are found [here](https://fly.io/docs/reference/configuration/).
+
+#### Using Custom Domains
+The documentation for using custom Domain on Fly.io are located in the documentation [here](https://fly.io/docs/apps/custom-domain/)
