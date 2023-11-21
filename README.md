@@ -17,3 +17,14 @@ There are specialized teams that perform various tasks geared towards supplying 
 These teams work hand-in-hand to provide high satisfaction results in order to hand-over the end product to the client.
 
 _Link_ is available at __zenfibercom.org__ [here](zenfiber.org)
+
+### THIS DEPLOYMENT
+
+DOCUMENTATION
+
+__fly.toml file__
+
+Configurations are found [here](https://fly.io/docs/reference/configuration/).
+
+#### Using Custom Domains
+The documentation for using custom Domain on Fly.io are located in the documentation [here](https://fly.io/docs/apps/custom-domain/)
