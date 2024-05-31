@@ -47,7 +47,7 @@ li {
     object-fit: cover;
     vertical-align: bottom;
 }
-li img {
+/* li img {
     max-width: 300px;
     transition: 0.2s ease-in-out;
     box-shadow: 0 2px 3px rgba(0,0,0,0.2);
@@ -55,11 +55,19 @@ li img {
 li img:hover {
     transform: scale(1.12);
     box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-}
+} */
 
 img{
     z-index: 1;
+    transition: .2s;
+    cursor: pointer;
 }
+
+img:hover{
+    transform: scale(1.2);
+}
+
+
 /*Flexbox*/
 .navbar{
     position: fixed;
