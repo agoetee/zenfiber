@@ -48,11 +48,73 @@ li {
     vertical-align: bottom;
 }
 li img {
+    max-width: 300px;
     transition: 0.2s ease-in-out;
     box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
 li img:hover {
-    transform: scale(1.5);
+    transform: scale(1.12);
     box-shadow: 0 8px 15px rgba(0,0,0,0.3);
 }
+
+img{
+    z-index: 1;
+}
 /*Flexbox*/
+.navbar{
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 20;
+}
+
+/* To Home */
+#to-home{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 22px;
+    font-weight:600;
+    text-decoration: none;
+}
+    
+@media (min-width: 992px){
+
+    #home{
+        margin-right: 4em ;
+        transition-duration: .3s;
+    }
+    
+    #home:hover{
+        transform:scale(1.12);
+        text-shadow: 2px 2px 4px black;
+    }
+    
+    #home:active{
+        transform: scale(.90);
+        text-shadow: none;
+    }
+}
+
+/* To Top */
+#to-top{
+	position: fixed;
+    z-index: 10;
+	display:none;
+	right: 2vw;
+	bottom: 2vh;
+	background-color: #004646;
+	color: aliceblue;
+	font-weight: bold;
+	text-decoration: none;
+	transition-duration: .4s;
+}
+
+#to-top:hover{
+	background-color: #79d5d5;
+	color: black;
+	scale: 1.13;
+}
+
+#to-top:active{
+	scale: .90;
+}

@@ -38,9 +38,33 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }, step);
   }
-  counter("count1", 0, 505, 4000);
-  counter("count2", 0, 4, 2500);
-  counter("count3", 0, 18, 3000);
+
+  // Intersection Observer
+  let options = {
+    threshold: 0.1
+  };
+  
+  let callback = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        let id = entry.target.id;
+        if (id === "count1") {
+          counter("count1", 0, 505, 4000);
+        } else if (id === "count2") {
+          counter("count2", 0, 4, 2500);
+        } else if (id === "count3") {
+          counter("count3", 0, 18, 3000);
+        }
+        observer.unobserve(entry.target); // Stop observing after the counter starts
+      }
+    });
+  };
+
+  let observer = new IntersectionObserver(callback, options);
+
+  document.querySelectorAll("#count1, #count2, #count3").forEach(counterElement => {
+    observer.observe(counterElement);
+  });
 });
 
 // ANIMATED COUNTER 2
@@ -61,3 +85,23 @@ function validateEmail() {
 }
 
 // CONTACT FORM EMAIL VALIDATION
+
+
+// To Top button
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toTopButton = document.getElementById('to-top');
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) { // Adjust this value to your needs
+      toTopButton.style.display = 'block';
+    } else {
+      toTopButton.style.display = 'none';
+    }
+  });
+
+  toTopButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
