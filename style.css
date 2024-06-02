@@ -276,6 +276,54 @@ img {
 	color: red;
 
 }
+
+
+/* Navbar */
+
+.nav-item{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	transition-duration:.3s;
+}
+
+@media (min-width: 992px){
+	.nav-item:hover{
+		scale: 1.12;
+		text-shadow: 2px 2px 4px black;
+	}
+
+	.nav-item:active{
+		scale: .90;
+		text-shadow: none;
+	}
+}
+
+
+/* Carousel */
+.carousel{
+	margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 424px){
+	.carousel{
+		width: 250px;
+		height: 250px;
+		
+	}
+}
+
+@media only screen and (min-width:425px) and (max-width:562px){
+	.carousel{
+		width: 350px;
+		height: 350px;
+	}
+}
+
+.dropdown-item{
+	text-shadow: none;
+}
+
 /*CONTACT US SECTION*/
 
 /*FOOTER SECTION*/
@@ -314,3 +362,24 @@ footer a {
 }
 /*FOOTER SECTION*/
 
+#to-top{
+	position: fixed;
+	display:none;
+	right: 2vw;
+	bottom: 2vh;
+	background-color: #004646;
+	color: aliceblue;
+	font-weight: bold;
+	text-decoration: none;
+	transition-duration: .4s;
+}
+
+#to-top:hover{
+	background-color: #79d5d5;
+	color: black;
+	scale: 1.13;
+}
+
+#to-top:active{
+	scale: .90;
+}

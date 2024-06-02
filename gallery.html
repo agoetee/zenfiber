@@ -11,74 +11,52 @@
 	<link rel="stylesheet" type="text/css" href="gallerystyle.css">
 	
 	<title>ZEN FIBERCOM</title>
-	<link rel="icon" type="image/x-icon" href=".\img\icon.png">
+	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
 </head>
 <body>
+	<script src="gallery.js"></script>
 	<!-- Navbar area -->
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-		<div class="container">
-			<a href="index.html" class="navbar-brand"><img src=".\img\iconAndName.gif" class="img-responsive"  alt="Navbar image & title"/></a>
-		</div>		
+	<nav class="navbar navbar-expand-lg navbar-dark px-2 d-flex justify-content-between">
+		<div class=" d-flex align-items-center px-1">		
+			<a href="./index.html" class="navbar-brand "><img src="./img/zenfiber_logo.jpeg" style="width: 50px; height: 100px; border-radius: 2px;"  alt="Navbar image & title"/></a>
+			<h1 class="d-none d-md-flex pt-2" style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Zen Fibercom Limited</h1>
+		</div>
+		<div id="home">
+			<a id="to-home" href="./index.html">&LeftArrow; Go Home</a>
+		</div>
 	</nav>
 
 	<!-- GALLERY SECTION -->
-
-	<div class="space mt-5">
-		<div class="row pt-5">
-			<div class="col-12">
-				<h2 class="text-center border-bottom mb-5 pb-3">PHOTO GALLERY</h2>
+	<main>
+		<div class="space mt-5" style="margin-top: 100px;">
+			<div class="row pt-5">
+				<div class="col-12">
+					<h2 class="text-center border-bottom mb-5 pb-2" style="font-family:monospace;">PHOTO GALLERY</h2>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-12">
-				<button class="btn topBtn btn-lg m-5" type="button" ><i class="bi bi-arrow-left"></i><a href="index.html">Go Back</a></button>
+	
+		<section id="grid-section" class="container">
+			<div class="row g-4 z-1" id="imageContainer">
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<div class="card border-0 shadow-lg z-1" id="image-frame">
+						<img  id="pictures" src=".\img\working\financeVisit1.jpeg" alt="financeVisit1" class="card-img-top rounded-2xl img-hover z-1">
+					</div>
+				</div>
+				
+				<!-- Add more items as needed -->
 			</div>
-		</div>
-
-		<!-- Just add the image into the list and follow the class -->
-		<ul>
-			<li><img class="thelist" src=".\img\working\financeVisit1.jpeg" alt="financeVisit1"/></li>
-			<li><img class="thelist" src=".\img\working\cableStart.jpg" alt="cable start"/></li>
-			<li><img class="thelist" src=".\img\working\digging.jpg" alt="digging"/></li>
-			<li><img class="thelist" src=".\img\working\legalVisit.jpeg" alt="legalVisit"/></li>
-			<li><img class="thelist" src=".\img\working\height.jpg" alt="height"/></li>
-			<li><img class="thelist" src=".\img\working\splice.jpg" alt="splice"/></li>
-			<li><img class="thelist" src=".\img\working\pulling.jpg" alt="pulling"/></li>
-			<li><img class="thelist" src=".\img\working\drumIdle.jpg" alt="drum Idle"/></li>
-			<li><img class="thelist" src=".\img\working\cellCite.jpeg" alt="cellCite"/></li>
-			<li><img class="thelist" src=".\img\working\cableStart1.jpg" alt="cable start"/></li>
-			<li><img class="thelist" src=".\img\working\survey.jpg" alt="survey"/></li>
-			<li><img class="thelist" src=".\img\working\uncoil2.jpg" alt="uncoil 2"/></li>
-			<li><img class="thelist" src=".\img\working\trainingVodafone.jpg" alt="vodafone training"/></li>
-			<li><img class="thelist" src=".\img\working\uncoil1.jpg" alt="uncoil 1"/></li>
-			<li><img class="thelist" src=".\img\working\trainingVodafone2.jpg" alt="training vodafone2"/></li>
-			<li><img class="thelist" src=".\img\working\trainingVodafone1.jpg" alt="training vodafone1"/></li>
-			<li><img class="thelist" src=".\img\working\watTraining4.jpg" alt="watTraining4"/></li>
-			<li><img class="thelist" src=".\img\working\sunyani.jpg" alt="sunyani"/></li>
-			<li><img class="thelist" src=".\img\working\midUncoil1.png" alt="midUncoil1"/></li>
-			<li><img class="thelist" src=".\img\working\tema.jpg" alt="tema"/></li>
-			<li><img class="thelist" src=".\img\working\watTraining3.jpg" alt="watTraining3"/></li>
-			<li><img class="thelist" src=".\img\working\midUncoil2.jpg" alt="midUncoil2"/></li>
-			<li><img class="thelist" src=".\img\working\our_work2.jpg" alt="our_work2"/></li>
-			<li><img class="thelist" src=".\img\working\watTraining1.jpg" alt="watTraining1"/></li>
-			<li><img class="thelist" src=".\img\working\watTraining2.jpg" alt="watTraining2"/></li>
-			<li><img class="thelist" src=".\img\working\splice1.jpeg" alt="splice1"/></li>
-			<li><img class="thelist" src=".\img\working\watTraining5.jpg" alt="watTraining5"/></li>
-			<li><img class="thelist" src=".\img\working\watTraining6.jpg" alt="watTraining6"/></li>
-			<li><img class="thelist" src=".\img\working\financeVisit.jpeg" alt="financeVisit"/></li>
-			<li><img class="thelist" src=".\img\working\uncoil.jpg" alt="uncoil"/></li>
-			<li><img class="thelist" src=".\img\working\trainingVodafone3.jpg" alt="trainingVodafone3"/></li>
-			<li><img class="thelist" src=".\img\working\startCable.jpg" alt="startCable"/></li>
-		</ul>
-	</div>
-
-	<div class="row">
-		<div class="col-12">
-			<button class="btn topBtn btn-lg m-5" type="button" ><i class="bi bi-arrow-left"></i><a href="index.html">Go Back</a></button>
-		</div>
-	</div>
+		</section>
+	</main>
 
 
+	<a class="p-2 rounded-2" type="button" id="to-top" href="#" >Back To Top &uarr;</a>
+
+	<!-- FOOTER SECTION -->
+	<footer class="w-100 workCard-text text-light" id="footer">
+		<div>
+			<p class="footer-text stay-middle align-self-center">&copy; ZEN FIBERCOM LIMITED &mdash; 2024</p>		
+	</footer>
 <!-- GALLERY SECTION -->
 
 </body>
