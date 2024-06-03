@@ -4,17 +4,18 @@ const imgs = document.getElementById('imgs');
 
 const img = document.querySelectorAll('#imgs img');
 
-let idx = 0;
+let i = 0;
 
 
 function run() {
-	idx++;
+	i++;
 
-	if (idx > img.length - 1) {
-		idx = 0;
+	if (i > img.length - 1) {
+		i = 0;
 	}
+  const imageWidth = img[0].clientWidth;
 
-	imgs.style.transform = `translateX(${-idx * 500}px)`;
+	imgs.style.transform = `translateX(${-i * imageWidth}px)`;
 }
 
 setInterval(run, 3000);
