@@ -138,8 +138,8 @@ body::before {
 
 img {
     object-fit: fill;
-    height: 500px; 
-    width: 500px;
+    /* height: 500px; 
+    width: 500px; */
 }
 
 /* READ-MORE LIST HEADING*/
@@ -303,13 +303,15 @@ img {
 	margin: 0 auto;
 }
 
+.slide-image{
+	width: inherit;
+}
 
 
-@media only screen and (max-width: 424px){
+@media (max-width: 424px){
 	.carousel{
-		width: 250px;
-		height: 250px;
-		
+		width: 300px;
+		height: 300px;
 	}
 }
 

@@ -9,15 +9,15 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
 	<title>ZEN FIBERCOM</title>
-	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+	<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
 </head>
 <body style="width: 100vw; overflow-x: hidden;">
 
 	<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" style="border-bottom: 1px solid white;">
 		<div class="container-fluid mr-lg-6 ">
 			<div class="d-flex align-items-center mr-lg-6">		
-				<a href="#" class="navbar-brand "><img src="./img/zenfiber_logo.jpeg" style="width: 50px; height: 100px; border-radius: 2px;"  alt="Navbar image & title"/></a>
+				<a href="#" class="navbar-brand "><img src="./assets/zenfiber_logo.jpeg" style="width: 50px; height: 100px; border-radius: 2px;"  alt="Navbar image & title"/></a>
 				<h1 class="d-none d-md-flex pt-2" style="color: white; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Zen Fibercom Limited</h1>
 			</div>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2 w-100 fs-5 justify-content-end" >
 					<li class="nav-item">
-						<a class="nav-link active link-body-emphasis" aria-current="page" href="#" style="color: white;">Home</a>
+						<a class="nav-link active link-body-emphasis" aria-current="page" href="/Gallery/" style="color: white;">Gallery</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle link-body-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: azure;">
@@ -36,9 +36,8 @@
 							<li><a class="dropdown-item" href="#whatWeDo">What We Do</a></li>
 							<li><a class="dropdown-item" href="#choose-us">Why Choose Us</a></li>
 							<li><a class="dropdown-item" href="#ourClient">Our Clients</a></li>
-							<li><a class="dropdown-item" href="#aboutUs">About</a></li>
 							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+							<li><a class="dropdown-item" href="#aboutUs">About</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
@@ -63,12 +62,12 @@
 					<div class="carousel-inner" id="imgs" style="width: 70vw;">
 	
 						Adjusting the flex-direction for different screen sizes
-						<img class="img-fluid carousel-item active" src="./img/cable/truckPole.jpeg">
-						<img class="img-fluid carousel-item" src="./img/cable/powerMeter.jpg">
-						<img class="img-fluid carousel-item" src="./img/cable/patchCord.jpg">
-						<img class="img-fluid carousel-item" src="./img/cable/dp.jfif">
-						<img class="img-fluid carousel-item" src="./img/cable/cableDrum.jpg">
-						<img class="img-fluid carousel-item" src="./img/cable/spliceGroup.jpg">
+						<img class="img-fluid carousel-item active" src="./assets/cable/truckPole.jpeg">
+						<img class="img-fluid carousel-item" src="./assets/cable/powerMeter.jpg">
+						<img class="img-fluid carousel-item" src="./assets/cable/patchCord.jpg">
+						<img class="img-fluid carousel-item" src="./assets/cable/dp.jfif">
+						<img class="img-fluid carousel-item" src="./assets/cable/cableDrum.jpg">
+						<img class="img-fluid carousel-item" src="./assets/cable/spliceGroup.jpg">
 					</div>
 				</div>
 			</div>
@@ -92,14 +91,14 @@
 					</div>
 					
 					<!-- Image Slider -->
-					<div class="carousel" id="carousel">
+					<div class="carousel mt-1" id="carousel">
 						<div class="image-container" id="imgs">
-							<img class="img-fluid" src="./img/cable/truckPole.jpeg">
-							<img class="img-fluid" src=".\img\cable\powerMeter.jpg">
-							<img class="img-fluid" src="./img/cable/patchCord.jpg">
-							<img class="img-fluid" src="./img/cable/dp.jfif">
-							<img class="img-fluid" src=".\img\cable\cableDrum.jpg">
-							<img class="img-fluid" src=".\img\cable\spliceGroup.jpg">
+							<img class="img-fluid" src="./assets/cable/truckPole.jpeg" id="slider-img">
+							<img class="img-fluid" src="./assets/cable/powerMeter.jpg">
+							<img class="img-fluid" src="./assets/cable/patchCord.jpg">
+							<img class="img-fluid" src="./assets/cable/cableDrum.jpg">
+							<img class="img-fluid" src="./assets/cable/dp.jfif">
+							<img class="img-fluid" src="./assets/cable/spliceGroup.jpg">
 						</div>
 					</div>
 			</div>
@@ -110,7 +109,7 @@
 				<div class="container">
 					<div class="row p-5">
 						<div class="col-sm-12">
-							<h2 class="text-uppercase text-center border-bottom mb-5 pb-5">What we do...</h2>
+							<h2 class="text-uppercase text-center border-bottom pb-4">What we do...</h2>
 						</div>
 					</div>
 					<div class="row bg-light p-3 shadow-sm">
@@ -118,7 +117,7 @@
 						<div class="col-lg-4 col-xs-4 col mb-3 d-flex align-items-stretch">
 							<div class="card">
 								<h3 class="card-header text-light workCard-text">FTTx Installations</h3>
-								<img src="./img/cable/resize.jpg" class="card-img-top" alt="Card Image">
+								<img src="./assets/cable/resize.jpg" class="card-img-top rounded-0" alt="Card Image">
 								<div class="card-body d-flex flex-column text-light workCard-text">
 									<h5 class="card-title ">Fiberoptic Installations</h5>
 									<p class="card-text mb-4">The laying of fiberoptic cables that will usually connect from a Cell-Site to a customer location. The provision of the necessary accessories to complete the connection process.</p>							
@@ -129,7 +128,7 @@
 								<div class="col-lg-4 col-xs-4 mb-3 d-flex align-items-stretch">
 									<div class="card">
 										<h3 class="card-header text-light workCard-text">Aerial Works</h3>
-										<img src="./img/working/wHeight.jpg" class="card-img-top" alt="Card Image">
+										<img src="./Gallery/working/wHeight.jpg" class="card-img-top rounded-0" alt="Card Image">
 										<div class="card-body d-flex flex-column text-light workCard-text">
 											<h5 class="card-title ">Working at Height</h5>
 											<p class="card-text mb-4 ">In the process of connecting fiberoptic cable to the client, we necessarily attach the cables to poles to keep them high and out of reach. We are well vexed and in the position to do a satisfactory job based on your specific requirements.</p>		
@@ -140,7 +139,7 @@
 								<div class="col-lg-4 col-xs-4 mb-3 d-flex align-items-stretch">
 									<div class="card">
 										<h3 class="card-header text-light workCard-text">Earth Works</h3>
-										<img src="./img/working/digging.jpeg" class="card-img-top" alt="Card Image">
+										<img src="./Gallery/working/digging.jpeg" class="card-img-top rounded-0" alt="Card Image">
 										<div class="card-body d-flex flex-column text-light workCard-text">
 											<h5 class="card-title ">Minimal Earth works</h5>
 											<p class="card-text mb-4 ">For some locations, cables pass under the earth and provide the connections. When there are instances of that nature, be asured of the job being done.</p>      						
@@ -164,10 +163,10 @@
 					<div class="container">
 						<div class="row align-items-center justify-content-between">
 							<div class="col-md col-sm-6">
-								<img src="./img/images/creativeTeam1.png" alt="Creative Team" class="img-fluid">
+								<img src="./assets/images/creativeTeam1.png" alt="Creative Team" class="img-fluid">
 							</div>
 							<div class=" col-sm-6 col-lg-4 col-sm-12 col-xs-12 col text-canvass">
-								<h2 class="text-center">A creative Team</h2><hr>
+								<h2 class="text-center">A <span>Creative</span> Team</h2><hr>
 								<p class="lead">We have a very solid creative team that listens to your specifications and requirements, and then comes up with a solution just to get you satisfied with your need.</p>
 								<p>
 									<button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-creative" aria-expanded="false" aria-controls="collapse-creative"><i class="bi bi-chevron-expand"></i>
@@ -214,7 +213,7 @@
 								</div>						
 							</div>
 							<div class="col-md-6" style="display: flex; flex-grow: 1; min-height: 30px; justify-content: center;">
-								<img src="./img/images/hse.jpg" alt="Health and Safety" class="img-fluid rounded-2">
+								<img src="./assets/images/hse.jpg" alt="Health and Safety" class="img-fluid rounded-2">
 							</div>				
 						</div>			
 					</div>		
@@ -224,10 +223,10 @@
 					<div class="container">
 						<div class="row align-items-center justify-content-between technology">
 							<div class="col-lg-6 col-sm-12">
-								<img src="./img/images/splice-machine.jpg" alt="Up-To-Date Technology" class="img-fluid">
+								<img src="./assets/images/splice-machine.jpg" alt="Up-To-Date Technology" class="img-fluid">
 							</div>
 							<div class="col-lg-6 col-sm-12 text-canvass ">
-								<h2>Up-To-Date Technology</h2><hr>
+								<h2 class="text-center">Up-To-Date Technology</h2><hr>
 								<p class="lead">We pride ouselves with world-class technology that enables us provide cutting edge product and service with the least amount of loss. Our work has produced non-returnable products which has kept our client very satisfied with our work and refer highly complex tasks to us.</p>
 								<p>
 									<button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-technology" aria-expanded="false" aria-controls="collapse-technology"><i class="bi bi-chevron-expand"></i>
@@ -295,7 +294,9 @@
 						<div class="d-flex justify-content-center">
 							<div class="card m-3 ">
 								<div class="w-100" style="width: 250px; margin: 0 auto;">
-									<img class="ourClient w-100 theClient" src="./img/images/vodafone-gh.jpg" alt="Vodafone Ghana" style="height: 250px;">
+									<img class="ourClient w-100 theClient rounded-2" 
+									src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl4R7lA1tlSlrBzf9OrDXIswYytfI7TfvC0w&s" 
+									alt="Telecel Ghana" style="height: 250px;">
 								</div>
 							</div>
 						</div>
@@ -306,14 +307,14 @@
 			<!-- ABOUT US SECTION -->
 			<section class="workCard-text main-section text-light text-center text-sm-start" id="aboutUs">
 				<div class="container">
-					<div class="row pt-5">
+					<div class="row pt-1 pb-2">
 						<div class="col-12 text-canvass">
 							<h2 class="text-center border-bottom pb-5 mb-5 ">ABOUT US</h2>
 						</div>
 					</div>			
 					<div class="row align-items-center justify-content-between">
 						<div class="col-lg-6">
-							<img src="./img/images/mansion.png" alt="About Us" class="img-fluid">
+							<img src="./assets/images/mansion.png" alt="About Us" class="img-fluid">
 						</div>
 						<div class="col-lg-6 col-sm-12 text-canvass">
 							<h2>The Story</h2><hr>
@@ -340,50 +341,44 @@
 				<div class="container">
 					<div class="row pt-5">
 						<div class="col-12">
-							<h2 class="text-center border-bottom mb-5 pb-5">CONTACT US</h2>
+							<h2 class="text-center border-bottom pb-3">CONTACT US</h2>
 						</div>
 					</div>
 					<div class="row align-items-center justify-content-center pb-5 contacting">
 						<div class="col-md table1">
-							<table class="table table-borderless table-text">
+							<table class="table table-borderless d-flex flex-column align-items-center">
 								<thead>
 									<tr>
 										<th scope="col"></th>
 										<th scope="col"></th>
 									</tr>
 								</thead>
-								<tbody>
+								<tbody class="table-text">
+								<!-- Phone number -->
 									<tr>
 										<th scope="row"><i class="bi bi-telephone"></i></th>
 										<td>
-											<a href="tel:+23330223830">+233 (0) 30 2238330</a>
+											<a href="tel:+23330223830">+233 (0) 200 683770</a>
 										</td>
 									</tr>
-							
+
+								<!-- Whatsapp number -->
 									<tr>
 										<th scope="row"><i class="bi bi-phone"></i></th>
 										<td>
 											<a href="https://wa.me/233245423177">+233 (0) 245 423177</a><br>
-											<a href="https://wa.me/233200683770">+233 (0) 200 683770</a>
-									</td>
+										</td>
 									</tr>
-					
+								
+								<!-- Mail -->
 									<tr>
 										<th scope="row"><i class="bi bi-envelope"></i></th>
-										<td>info@zenfiber.org</td>
-									</tr>							
-								</tbody>
-							</table>
-						</div>
-						<div class="col-md pb-2 table2">					
-							<table class="table table-borderless table-text">
-								<thead class="table2-head">
-									<tr>
-										<th scope="col" ></th>
-										<th scope="col" ></th>
-									</tr>
-								</thead>
-								<tbody>
+										<td>
+											<a href="mailto:info@zenfiber.org">info@zenfiber.org</a>
+										</td>
+									</tr>	
+
+
 									<tr>
 										<th scope="row"><i class="bi bi-geo"></i></th>
 										<td><a href="https://www.google.com/maps/place/Zen+Fibercom+Limited/@5.5681314,-0.2393122,15.65z/data=!4m5!3m4!1s0x0:0x31ffa587ad178382!8m2!3d5.5696417!4d-0.2398887" target="_blank">Amar Kofi Street, Kaneshie</a></td>
@@ -391,7 +386,7 @@
 									<tr>
 										<th scope="row"><i class="bi bi-geo-alt"></i></th>
 										<td>House Number B662/7<br> Ghana Post Address: GA-312-5976</td>
-									</tr>					
+									</tr>									
 								</tbody>
 							</table>
 						</div>
